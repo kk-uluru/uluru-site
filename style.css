@@ -178,19 +178,6 @@ main p{
     margin-bottom: 60px;
 }
 
-/* お問い合わせボタン */
-main > a{
-    display: block;
-    width: 180px;
-    margin: auto;
-    text-align: center;
-    text-decoration: none;
-    background-color: #dbe8dd;
-    color: #58725f;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 30px;
-}
 
 /* スマホ対応 */
 @media screen and (max-width:768px){
@@ -219,15 +206,68 @@ main > a{
         width: 90%;
     }
 }
+@media (max-width: 768px) {
+    .strength-box {
+        grid-template-columns: 1fr;
+    }
+}
 
 .service-box{
     grid-template-columns: 1fr;
 }
 
+.strength-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.strength-box div {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.strength-box div:hover {
+    transform: translateY(-8px);
+}
+
+.strength-box h4 {
+    color: #4f6a57;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.strength-box p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+body {
+    padding-top: 80px;
+}
 
 
-
-
-
+footer {
+    background: #4f6a57;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+}
 
 
