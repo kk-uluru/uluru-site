@@ -206,12 +206,86 @@ main p{
         width: 90%;
     }
 }
+.contact {
+    background: #f8fbfd;
+    padding: 60px 30px;
+    margin: 60px auto;
+    max-width: 1000px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.contact h2 {
+    color: #0b4f6c;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.contact p {
+    color: #444;
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+
 @media (max-width: 768px) {
     .strength-box {
         grid-template-columns: 1fr;
     }
 }
 
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    header div {
+        margin-top: 10px;
+    }
+
+    .menu {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .mv img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content1,
+    section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+        line-height: 1.4;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .service-box,
+    .strength-box {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    body {
+        padding-top: 120px;
+    }
+}
 .service-box{
     grid-template-columns: 1fr;
 }
@@ -270,4 +344,81 @@ footer {
     margin-top: 60px;
 }
 
+header div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
 
+.menu {
+    font-size: 14px;
+    padding: 6px 10px;
+}
+.contact {
+    padding: 35px 20px;
+    margin: 40px 15px;
+}
+
+.contact h2 {
+    font-size: 24px;
+}
+
+.contact p {
+    font-size: 15px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+body {
+    padding-top: 100px;
+}
+
+.contact {
+    background: #f8fbfd;
+    padding: 60px 30px;
+    margin: 60px auto;
+    max-width: 1000px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .menu {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .service-box,
+    .strength-box {
+        grid-template-columns: 1fr;
+    }
+}
+.menu {
+    font-size: 13px;
+    margin: 4px 6px;
+    padding: 4px 6px;
+}
+
+header div {
+    width: 100%;
+    justify-content: center;
+}
